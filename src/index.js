@@ -82,7 +82,7 @@ const useKrpano = (options = {}) => {
   // Set container div `id` when ref is assigned
   useEffect(() => {
     if (containerRef.current) {
-      containerRef.current.id = DEFAULT_TARGET_ID
+      containerRef.current.id = embeddingParams.target || DEFAULT_TARGET_ID
     }
   }, [])
 
